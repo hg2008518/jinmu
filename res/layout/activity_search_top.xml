@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/orange"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/serch_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:src="@drawable/left_arrow" />
+
+    <com.jmz.view.ClearEditTextView
+        android:id="@+id/serch_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:background="@android:color/white"
+        android:hint="@string/home_hint"
+        android:padding="7dp"
+        android:singleLine="true" />
+
+    <ImageView
+        android:id="@+id/serch_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/bg_colorbtn"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/icon_search" />
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" 
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/sharerecord_listadater_times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:text="@string/sharerecord_defule_time" 
+        android:minEms="4"/>
+
+     <TextView
+        android:id="@+id/sharerecord_listadater_spread_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:text="@string/sharerecord_defule_time" 
+        android:minEms="4"/>
+    <ImageView
+        android:id="@+id/sharerecord_listadater_ticket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:src="@drawable/nullimg" />
+
+    <TextView
+        android:id="@+id/sharerecord_listadater_operate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:text="@string/sharerecord_operate_info"
+        android:textColor="@color/deeporange" 
+        android:background="@drawable/bg_base_white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+</LinearLayout>

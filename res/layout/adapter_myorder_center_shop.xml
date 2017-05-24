@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/adapter_myorder_shop_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/littlegray"
+        android:drawableLeft="@drawable/ic_business_detail_shop"
+        android:gravity="left|bottom"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:text="店铺名" />
+
+    <View
+        style="@style/lineStyle"
+        android:layout_marginBottom="5dp" />
+
+    <com.jmz.view.MyListView
+        android:id="@+id/adapter_myorder_shop_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_gray"
+        android:divider="@color/basecolor"
+        android:dividerHeight="5dp"
+        android:listSelector="@android:color/transparent" />
+
+    <View style="@style/lineStyle" />
+
+    <TextView
+        android:id="@+id/adapter_myorder_shop_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="left"
+        android:singleLine="true"
+        android:text="下单时间"
+        android:textSize="@dimen/ticketadapter_info"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/adapter_myorder_shop_exp"
+            style="@style/MyShopButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/myorderinfo_lookexp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/adapter_myorder_shop_refundstate"
+            style="@style/MyShopButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/myorderinfo_refund"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/adapter_myorder_shop_orderstate"
+            style="@style/MyShopButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/myorderinfo_confirmgoods" />
+
+        <TextView
+            android:id="@+id/adapter_myorder_shop_delete"
+            style="@style/MyShopButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:text="@string/car_delete_order" />
+    </LinearLayout>
+
+</LinearLayout>

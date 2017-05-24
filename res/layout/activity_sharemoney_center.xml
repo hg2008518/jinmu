@@ -1,0 +1,217 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sharemoney_tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/contract_fans_qr_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/contract_fans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/btn_contract_fans_qr"
+                android:drawableLeft="@drawable/icon_red_hearts"
+                android:gravity="center_vertical"
+                android:padding="6dp"
+                android:text="我的粉丝(0)" />
+
+            <TextView
+                android:id="@+id/contract_qr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_contract_fans_qr"
+                android:drawableLeft="@drawable/icon_qr_code"
+                android:gravity="center_vertical"
+                android:paddingBottom="6dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="6dp"
+                android:text="二维码" />
+        </LinearLayout>
+		
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/basecolor"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0.5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="所得奖金" />
+
+                <TextView
+                    android:id="@+id/sharemoney_usemoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="0.2dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:gravity="center"
+                    android:singleLine="false"
+                    android:text="0.00元" />
+                <TextView 
+                    android:id="@+id/sharemoney_usemoney_canuse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="0.2dp"
+                    android:paddingBottom="5dp"
+                    android:gravity="center"
+                    android:singleLine="false"
+                    android:textSize="12sp"
+                    android:text="(可用60元)"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/sharemoney_addtab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:text="播 · 购奖金" />
+
+                <TextView
+                    android:id="@+id/sharemoney_bogomoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="0.2dp"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:singleLine="false"
+                    android:text="0.00元" />
+                <TextView
+                    android:id="@+id/sharemoney_bogomoney_daiding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="0.2dp"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:singleLine="false"
+                    android:textSize="12sp"
+                    android:text="(待定0.00元)" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/contract_money_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/sharemoney_contracttab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:text="推广奖金" />
+
+                <TextView
+                    android:id="@+id/sharemoney_contractmoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="0.2dp"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:singleLine="false"
+                    android:text="0.00元" />
+                <TextView
+                    android:id="@+id/sharemoney_contractmoney_substitution"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="0.2dp"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:singleLine="false"
+                    android:textSize="12sp"
+                    android:text="(待定0.00元)" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/sharemoney_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/basecolor"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/sharemoney_add"
+                style="@style/ProductClassRadioGroupButtonStyle"
+                android:background="@color/white"
+                android:checked="true"
+                android:padding="5dp"
+                android:text="@string/sharemoney_add" />
+
+            <RadioButton
+                android:id="@+id/sharemoney_contract"
+                style="@style/ProductClassRadioGroupButtonStyle"
+                android:layout_marginLeft="0.5dp"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:text="@string/sharemoney_contract" />
+
+            <RadioButton
+                android:id="@+id/sharemoney_sub"
+                style="@style/ProductClassRadioGroupButtonStyle"
+                android:layout_marginLeft="0.5dp"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:text="@string/sharemoney_sub" />
+        </RadioGroup>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+
+</TabHost>

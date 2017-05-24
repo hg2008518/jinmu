@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/serch_adater_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="金拇指购"
+        android:gravity="center"
+        android:padding="6dip"/>
+
+</LinearLayout>

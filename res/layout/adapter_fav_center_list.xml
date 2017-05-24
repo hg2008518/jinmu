@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/fav_listadapter_img"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:src="@drawable/nullimg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/fav_listadapter_img"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/fav_listadapter_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:text="名字"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/fav_listadapter_orderprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:text="原价" />
+
+        <TextView
+            android:id="@+id/fav_listadapter_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:text="现价" />
+
+        <TextView
+            android:id="@+id/fav_listadapter_faved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:text="收藏人数" />
+
+        <TextView
+            android:id="@+id/fav_listadapter_unfav"
+            style="@style/ColorButtonStyle"
+            android:text="取消收藏"
+            android:layout_gravity="right"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

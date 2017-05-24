@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_gray"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/adapter_car_order_product_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:src="@drawable/nullimg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/adapter_car_order_product_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/adapter_car_trade_product_oldprice"
+            android:text="标题" />
+
+        <TextView
+            android:id="@+id/adapter_car_order_product_attr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adapter_car_order_product_title"
+            android:layout_toLeftOf="@+id/adapter_car_order_product_price"
+            android:text="属性"
+            android:textColor="@color/deepgray" />
+
+        <TextView
+            android:id="@+id/adapter_car_order_product_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adapter_car_order_product_attr"
+            android:layout_toLeftOf="@+id/adapter_car_order_product_spread"
+            android:text="数量"
+            android:textColor="@color/deepgray" />
+
+        <TextView
+            android:id="@+id/adapter_car_trade_product_oldprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="原价"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/adapter_car_order_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/adapter_car_trade_product_oldprice"
+            android:gravity="center"
+            android:text="现价"
+            android:textColor="@color/deeporange" />
+
+        <TextView
+            android:id="@+id/adapter_car_order_product_spread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/adapter_car_order_product_price"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/bg_car_spread"
+            android:gravity="center_horizontal|bottom"
+            android:paddingBottom="2dp"
+            android:text="9.00折"
+            android:textColor="@color/deeporange"
+            android:textSize="9sp" />
+    </RelativeLayout>
+
+</LinearLayout>

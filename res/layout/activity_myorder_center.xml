@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_emptyview" />
+
+    <com.jmz.view.PullToRefreshLayout
+        android:id="@+id/myorder_center_refrelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include
+            android:layout_below="@+id/sharemoney_addandsub_title"
+            layout="@layout/refresh_head" />
+
+        <com.jmz.view.PullableListView
+            android:id="@+id/myorder_listview"
+            style="@style/ListviewStyle"
+            android:background="@color/basecolor"
+            android:divider="@color/smallgray" />
+
+        <include layout="@layout/load_more" />
+    </com.jmz.view.PullToRefreshLayout>
+
+</LinearLayout>

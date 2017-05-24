@@ -1,0 +1,268 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Navigation Header -->
+    <style name="NavPage">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <!-- <item name="android:background">@drawable/nav_page</item> -->
+        <item name="android:background">@color/navpage</item>
+    </style>
+    
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="@android:style/Theme.Black.NoTitleBar">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowBackground">@color/basecolor</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+    </style>
+
+    <!-- 设置activity的进出动画 -->
+    <style name="activityAnimation" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/push_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/push_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/push_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/push_right_out</item>
+    </style>
+    <!-- 设置宽口的进出动画 -->
+     <style name="DialogWindowAnim" parent="@android:style/Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/push_left_in</item>
+        <item name="android:windowExitAnimation">@anim/push_right_out</item>
+    </style>
+    <!-- 等待框 -->
+    <style name="loadingDialogStyle" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 对话框是否有遮盖 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <!-- 设置常用的按钮样式方的-->
+    
+    <style name="ColorButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_colorbtn</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+    </style>
+
+     <style name="MyShopButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/btn_myshop</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:minEms">5</item>
+    </style> 
+    <!-- 商品排序 RadioGroupButton -->
+    <style name="ProductClassRadioGroupButtonStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:background">@drawable/btn_radioselect</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/productclassbtntextcolorselector</item>
+    </style>
+    <!-- 商品属性 RadioGroupButton -->
+    <style name="ProductAttrRadioGroupButtonStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textColor">@color/deepgray</item>
+        <item name="android:textSize">@dimen/textsize_thirteen</item>
+        <item name="android:background">@drawable/bg_selectarrtcolorbtn</item>
+        <item name="android:minEms">2</item>
+        <item name="android:textColor">@color/selectarrttextcolor</item>
+    </style>
+    <!-- tab底部控件 RadioGroupButton -->
+    <style name="TabRadioGroupButtonStyle">
+        <item name="android:button">@null</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textSize">0sp</item>
+    </style>
+    <!-- 商品展示listview -->
+    <style name="ListviewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:cacheColorHint">@color/basecolor</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">3dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+     <!-- 商品展示listview -->
+    <style name="FansListviewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:cacheColorHint">@color/basecolor</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">3dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+    <style name="GridViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:horizontalSpacing">10dp</item>
+        <item name="android:verticalSpacing">10dp</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:listSelector">@drawable/bg_white_gray</item>
+        <item name="android:numColumns">2</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:background">@color/littlegray</item>
+    </style>
+ 
+    <!-- 设置常用的线条样式 -->
+    <style name="lineStyle">
+        <item name="android:background">@color/gray</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+    </style>
+    <style name="dashedlineStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">7dp</item>
+    </style>
+    <!-- 弹出菜单样式 -->
+    <style name="MenuStyle">
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_marginLeft">0.2dp</item>
+        <item name="android:layout_marginRight">0.2dp</item>
+        <item name="android:background">@drawable/bg_white_gray</item>
+        <item name="android:textColor">@color/black_to_orange</item>
+    </style>
+
+    <!-- 设置checkbox样式 -->
+    <style name="LoginCheckBoxStyle" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/btn_checkbox</item>
+    </style>
+
+    <!-- 设置收藏样式 -->
+    <style name="FavCheckBoxStyle" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/btn_fav</item>
+    </style>
+	<!-- 设置属性框的出现与消失 -->
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/push_up</item>
+        <item name="android:windowExitAnimation">@anim/push_down</item>
+    </style>
+	
+    
+
+    <!-- 全民付 -->
+    <style name="umspay_mydialog" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="umspay_activity_mydialog" parent="@android:Theme.Dialog">
+        <item name="android:windowBackground">@drawable/umspay_myactivity_dialog</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowSoftInputMode">stateHidden</item>
+    </style>
+
+    <style name="umspay_activity_mydialog22" parent="@android:Theme.Dialog">
+        <item name="android:windowBackground">@drawable/umspay_myactivity_dialog2222</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowSoftInputMode">stateHidden</item>
+    </style>
+
+    <style name="umspay_upomp_bypay_MyDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+    <style name="umspay_Myanimation" parent="android:Theme.Light">
+        <item name="android:windowAnimationStyle">@style/umspay_AnimationActivity</item>
+    </style>
+
+    <style name="umspay_AnimationActivity">
+        <item name="android:activityOpenEnterAnimation">@anim/umspay_push_left_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/umspay_push_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/umspay_slide_up_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/umspay_slide_down_out</item>
+    </style>
+
+    <style name="umspay_mystyle" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/umspay_slide_up_in1</item>
+        <item name="@android:windowExitAnimation">@anim/umspay_slide_down_out1</item>
+    </style>
+    
+</resources>

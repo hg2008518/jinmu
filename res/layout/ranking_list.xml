@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+	  <!-- 前10排名 -->  
+	  <TextView  
+	   android:id="@+id/name"
+	   android:layout_width="0dip"  
+	   android:layout_height="wrap_content"  
+	   android:gravity="center"
+	   android:layout_weight="1"
+	   android:text="前10排名"  
+	  />  
+	  <!-- 用户名 -->  
+	  <TextView  
+	   android:id="@+id/phone"  
+	   android:layout_width="0dip"  
+	   android:layout_height="wrap_content"
+	   android:gravity="center"
+	   android:layout_weight="1"
+	   android:text="用户名"  
+	  />  
+	  <!-- 查看人数 -->  
+	  <TextView  
+	   android:id="@+id/amount"  
+	   android:layout_width="0dip"  
+	   android:layout_height="wrap_content" 
+	   android:layout_weight="1"
+	   android:gravity="center"
+	   android:text="查看人数" 
+	  />  
+</LinearLayout>

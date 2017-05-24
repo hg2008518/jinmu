@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">金拇指购</string>
+    <string name="company">广西金拇指网络科技信息有限公司\r\n版权所有 盗版必究</string>
+    <string name="rule">金拇指协议</string>
+    <string name="back">返回</string>
+    <string name="jian">件</string>
+    <string name="allshare">已播金券：</string>
+    <string name="alllook">已浏览：</string>
+    <string name="allpay">已出售：</string>
+    <string name="fareprice">运费:</string>
+    <string name="offsetparice">抵金券：</string>
+    <string name="free_postage">包邮</string>
+    <string name="yuanicon">¥</string>
+    <string name="yuan">元</string>
+    <string name="ren">人</string>
+    <string name="app_tip">提示</string>
+    
+    <!-- 其他账号登录 -->
+    <string name="use_otheraccount_login">使用其他账号登录：</string>
+    <string name="banding_title">返回</string>
+    <string name="banding_register_title">注册新账户</string>
+    <string name="banding_login_title">已有账户</string>
+    
+    <!-- 收货地址 -->
+    <string name="adressedit_tittle">编辑地址</string>
+    <string name="adress_tittle">编辑地址</string>
+    <string name="address_edit_addnew">新增收货地址</string>
+    <string name="address_edit_auto">设置为默认地址</string>
+    <string name="address_edit_city">请输入您的城市</string>
+    <string name="address_edit_citytitle">请选择城市</string>
+    <string name="address_edit_code">请输入邮编</string>
+    <string name="address_edit_delete">删除</string>
+    <string name="address_edit_name">请输入收货人的名字</string>
+    <string name="address_edit_phone">请输入收货人的联系号码</string>
+    <string name="address_edit_provincetitle">请选择省份</string>
+    <string name="address_edit_save">保存</string>
+    <string name="address_edit_street">请输入您的街道地址</string>
+    <string name="address_edit_xiantitle">请选择县区</string>
+    <string name="address_title">收货地址管理</string>
+    <string name="address_auto">默认地址</string>
+    <string name="address_delete_msg">"  "您确认要删除该地址么？</string>
+    <string name="address_delete_fail">该地址还未保存！</string>
+    <string name="address_edit_error_city">城市不正确</string>
+    <string name="address_edit_error_street">街道不正确</string>
+    <string name="address_edit_error_name">名字不正确</string>
+    <string name="address_edit_error_phone">联系电话号码不正确</string>
+    <string name="address_edit_error_code">邮编不正确</string>
+    <string name="address_edit_susse">提交成功</string>
+    <string name="address_edit_edit">修改成功</string>
+    <string name="address_edit_delete_suss">删除成功</string>
+    <string name="address_exit">没有可用地址哦</string>
+
+    <!-- 商品扫描 -->
+    <string name="capture_scan_text">扫一扫,更多商品就出来</string>
+    <string name="capture_scan_title">扫商品</string>
+
+    <!-- 购物车 -->
+    <string name="car_add_susses">加入成功</string>
+    <string name="car_canle">取消</string>
+    <string name="car_delete_order">删除</string>
+    <string name="car_enter_pay_number">请输入要抵消金额(元):</string>
+    <string name="car_inclubexpmoney">(含运费)</string>
+    <string name="car_initmoney">合计¥</string>
+    <string name="car_look">查看购物车</string>
+    <string name="car_noexpmoney">不包含运费</string>
+    <string name="car_pay">去付款(0)</string>
+    <string name="car_selectall">全选</string>
+    <string name="car_sure_order">立即购买</string>
+    <string name="car_sure_add">加入购物车</string>
+    <string name="car_title">我的购物车</string>
+    <string name="car_utile">操作订单</string>
+    <string name="car_utile_eixt">退出操作</string>
+    <string name="car_order_check">确认订单</string>
+    <string name="car_delete_msg">"  "您确认要删除该商品么？</string>
+    <string name="car_order_money_title">商品总价</string>
+    <string name="car_trade_express_title">收货方式</string>
+    <string name="car_order_fare_title">运费</string>
+
+    <!-- 对话框 -->
+    <string name="dialog_chosepaystyle">请选择支付方式</string>
+    <string name="dialog_postout_msgtitle">温馨提示</string>
+    <string name="dialog_cancel_btn">取 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;消</string>
+    <string name="dialog_sure_pay_btn">确认付款</string>
+    <string name="dialog_sure">确定</string>
+    <string name="dialog_wait_msg">正在加载...</string>
+
+    <!-- 找回密码 -->
+    <string name="findpassword_entercode">请输入验证码</string>
+    <string name="findpassword_phone">手机号码</string>
+    <string name="findpassword_sendcode">获取验证码</string>
+    <string name="findpassword_password">设置密码</string>
+    <string name="findpassword_passwordagain">确认密码</string>
+    <string name="findpassword_tittle">找回密码</string>
+    <string name="findpassword_suss">设置成功</string>
+
+    <!-- 联系客服 -->
+    <string name="findservice_baobao">宝宝</string>
+    <string name="findservice_online_info">8:00~21:00</string>
+    <string name="findservice_online_info_title">在线时间：</string>
+    <string name="findservice_online_one">" "一号客服</string>
+    <string name="findservice_online_title">联系在线客服</string>
+    <string name="findservice_online_two">" "二号客服</string>
+    <string name="findservice_send">发送</string>
+    <string name="findservice_shasha">莎莎</string>
+    <string name="findservice_hint">请输入关键字</string>
+    <string name="findservice_initword">"  "请您用一句话来描述您的问题,例如:如何注册？请输入关键字"注册";如果您不满意小金娃的答案，请选择屏幕左下角的人工服务或者拨打金拇指购的电话热线：400-871-7108</string>
+
+    <!-- 收藏列表 -->
+    <string name="fav_title">收藏金券</string>
+    <string name="fav_cancel">取消收藏</string>
+
+    <!-- 首页 -->
+    <string name="home_type_int">金券特推</string>
+    <string name="home_type_hot">当前热品</string>
+    <string name="home_type_hit">人气最高</string>
+    <string name="home_type_new">最新上线</string>
+    <string name="home_hint">拉菲红酒</string>
+    <string name="home_city_list">城市列表</string>
+    <string name="home_bianmintong">便民通</string>
+    <string name="home_lvyoupiaowu">旅游票务</string>
+    <string name="home_fulicaipiao">彩票</string>
+    <string name="home_fangchejinquan">房车金券</string>
+    <string name="home_yuantouhuo">源头货</string>
+
+    <!-- 用户登录 -->
+    <string name="login_entername">请输入手机号码</string>
+    <string name="login_password">请输入密码</string>
+    <string name="login_checkboxtext">记住密码</string>
+    <string name="login_error_phone">手机号码不正确</string>
+    <string name="login_error_password">密码不正确</string>
+    <string name="login_forgetpassword">忘记密码？</string>
+    <string name="login_tittle">登录</string>
+    <string name="login_susse">登录成功</string>
+    <string name="login_register">注册</string>
+
+    <!-- 消息提示 -->
+    <string name="msg_empty">没有更多的内容了</string>
+    <string name="msg_neterror">连接服务器失败，请稍后重试</string>
+    <string name="msg_emptystring">亲，没有您要查询的结果！请稍后重试</string>
+    <string name="msg_foundnewversion">亲，发现新版本，是否要更新</string>
+    <string name="msg_enter_pay">该笔交易最多可用余额支付</string>
+    <string name="msg_more_to_refre">亲，更多内容，敬请期待！</string>
+   	<string name="msg_search_error">内容不能为空</string>
+   	<string name="msg_eixtapp">再次按返回键退出程序</string>
+   	<string name="msg_version_error">亲，当前为最新版本噢</string>
+   	<string name="msg_found_new_version">亲，发现新版本，是否要更新</string>
+   	<string name="msg_refund_reson">请输入退款信息</string>
+   	<string name="msg_build">正在建设中...</string>
+   	<string name="msg_selectfare">选择运费</string>
+   	<string name="msg_addcarsuss">添加成功</string>
+   	<string name="msg_order_fail">下单失败，请检查网络！</string>
+   
+
+    <!-- 我的订单 -->
+    <string name="myorder_tittle">我的订单</string>
+    <string name="myorder_state_waitsend">待发货</string>
+    <string name="myorder_state_sended">已发货</string>
+    <string name="myorder_state_waitsure">待确认</string>
+    <string name="myorder_state_suss">交易成功</string>
+    <string name="myorder_state_topay">待付款</string>
+    <string name="myorder_state_fail">失败的订单</string>
+    <string name="myorder_state_allmyorder">全部</string>
+    <string name="myorder_msg_delete">"   "您确定删除该订单么，订单删除后将无法恢复！</string>
+    <string name="myorder_msg_refund">"   "亲！申请退款后，我们尽快核实情况给您答复哦</string>
+    <string name="myorder_msg_returngoods">"   "提交成功，请等待商家确认收货</string>
+    <string name="myorder_mag_inputresone">"   "亲！请输入退款原因</string>
+    <string name="myorder_msg_confirmgoods">"   "亲！您确定收货了？</string>
+    <string name="myorder_msg_enternumber">"   "请输入购买量</string>
+    <string name="myorder_sure">提交订单</string>
+    <string name="myorder_cancel">取消</string>
+    <string name="myorder_msg_deletesuccess">删除成功!</string>
+    <string name="myorder_ordertime">下单时间：</string>
+    <string name="myorder_ordernumber">订单编号：</string>
+    <string name="myorder_exist">订单不存在</string>
+
+    <!-- 我的电子票 -->
+    <string name="myticket_tittle">我的电子票</string>
+    <string name="myticket_exist">电子票不存在</string>
+    <string name="myticket_buyagain">再次购买</string>
+    <string name="myticket_refundmsg_head">"  "注：申请退款，经审核符合退款条件的买家需扣除2%的银行手续费。</string>
+    <string name="myticket_refundmsg_last">阅读买家“申请退款”需知。</string>
+
+    <!-- 订单详情 -->
+    <string name="myorderinfo_tittle">订单详情</string>
+    <string name="myorderinfo_delete">删除</string>
+    <string name="myorderinfo_lookexp">查看物流</string>
+    <string name="myorderinfo_refund">申请退款</string>
+    <string name="myorderinfo_confirmgoods">确认收货</string>
+    <string name="myorderinfo_pay">付款</string>
+    <string name="myorderinfo_wuliu">物流：</string>
+    <string name="myorderinfo_wuliuhao">运单号码：</string>
+    <string name="myorderinfo_postscrite">留言：</string>
+    <string name="myorderinfo_orderstate">订单状态：</string>
+    <string name="myorderinfo_notrefund">该订单无法申请退款</string>
+    <string name="myorderinfo_succee">申请成功,请耐心等候</string>
+    <string name="myorderinfo_confirmgoodssuccee">确认收货成功</string>
+    <string name="myorderinfo_dossuccee">操作成功</string>
+    <string name="myorderinfo_oldprice">原价：</string>
+    <string name="myorderinfo_shopprice">现价：</string>
+    <string name="myorderinfo_stock">库存：</string>
+
+    <!-- 提交订单 -->
+    <string name="order_bottom_initprice">现价:¥0.00</string>
+    <string name="order_title">提交订单</string>
+    <string name="order_express">快递</string>
+    <string name="order_selfget">自提</string>
+    <string name="no_have_wx_client">您没有安装有微信客户端，无法使用微支付，请选择其他的支付方式，感谢您的支持！</string>
+    <string name="wx_no_supportAPI">您当前的微信版本不支付第三方应用调用微支付功能，请安装最新版本的微信客户端，感谢您的理解！</string>
+    
+    <!-- 提现 -->
+    <string name="postout_tittle">提现</string>
+    <string name="postout_card">请输入银行卡</string>
+    <string name="postout_money">请输入提现金额</string>
+    <string name="postout_sure">确定提现</string>
+    <string name="postout_msg">可提现奖金50元</string>
+    <string name="postout_error_cardinfo">你输入的卡号不正确</string>
+    <string name="postout_error_moneyinfo">你输入的金额不正确</string>
+    <string name="postout_suss_moneyinfo">"  "申请提现后，我们将会在24小时内向您的全民付账号提现，请耐心等候！</string>
+    <string name="postout_success">提现成功</string>
+    <string name="postout_havemoney">您的账户余额为</string>
+    <string name="postout_nomoney">你的余额不足</string>
+    <string name="postout_nomoneymax">输入的金额太大了</string>
+    <string name="postout_msgtitle">提现步骤</string>
+    <string name="postout_goqmf">去绑定</string>
+    <string name="postout_goreqmf">去注册</string>
+    <string name="postout_remebercard">设为常用卡</string>
+    <string name="postout_one">1、注册中国银联商务全民付的实名认证账号,去注册;</string>
+    <string name="postout_two">2、金拇指购用户绑定全民付，去绑定;</string>
+    <string name="postout_three">3、返回提现页面直接提现。</string>
+
+    <!-- 商品详情 -->
+    <string name="product_title">商品详情</string>
+    <string name="product_share">播金券</string>
+    <string name="product_add_car">加入购物车</string>
+    <string name="product_pay">立即购买</string>
+    <string name="product_details">产品详情</string>
+    <string name="product_timetoend">距离结束时间仅剩：</string>
+    <string name="product_timetostart">距离开抢时间仅剩：</string>
+    <string name="product_no_stock">抢光了</string>
+    <string name="product_wait">敬请期待</string>
+    <string name="product_fished">秒杀结束</string>
+    <string name="product_selectattrtext">选择尺码 颜色分类 规格</string>
+    <string name="product_tishishuoming">提示说明</string>
+    <string name="product_findqq">联系商家</string>
+    <string name="product_go_bussshop">进入店铺</string>
+    <string name="product_exist">该商品不存在或以下架</string>
+    <string name="product_sharetotal">已播金券：</string>
+
+    <!-- 退款 -->
+    <string name="refund_title">退款信息</string>
+    <string name="refund_expmsg">请选择物流名称</string>
+    <string name="refund_expnumbermsg">请输入运单号</string>
+    <string name="refund_expmsg_title">物流名:</string>
+    <string name="refund_expnumbermsg_title">运单号:</string>
+
+    <!-- 注册 -->
+    <string name="register_tittle">注册</string>
+    <string name="register_phone">作为登陆的手机号码</string>
+    <string name="register_entercode">请输入验证码</string>
+    <string name="register_password">设置密码</string>
+    <string name="register_passwordagain">确认密码</string>
+    <string name="register_rule">确定注册则视为同意</string>
+    <string name="register_error_phone">输入的号码不正确</string>
+    <string name="register_hint_phone">不得低于11位</string>
+    <string name="register_error_passwordagian">你输入的密码不一致</string>
+    <string name="register_error_password">您的密码有误</string>
+    <string name="register_hint_password">不得低于6位</string>
+    <string name="register_error_code">验证码不正确</string>
+    <string name="register_say_code">获取验证码中，请稍后</string>
+    <string name="register_hint_code">填写验证码</string>
+    <string name="register_hint_referrername">邀请人用户名/手机号码  可为空</string>
+    <string name="register_say_susse">注册成功!请您重新登录。</string>
+    <string name="sure_btn_title">确认</string>
+
+    <!-- 播券奖金 -->
+    <string name="sharemoney_tittle">播券奖金</string>
+    <string name="sharemoney_tittleuseonly">您可用奖金：</string>
+    <string name="sharemoney_tittleunuseonly">冻结中的奖金：</string>
+    <string name="sharemoney_time">时间</string>
+    <string name="sharemoney_simplemoney">金额</string>
+    <string name="sharemoney_state">状态</string>
+    <string name="sharemoney_state_use">可用</string>
+    <string name="sharemoney_state_unuse">不可用</string>
+    <string name="sharemoney_add">播 · 购奖金</string>
+    <string name="sharemoney_contract">推广奖金</string>
+    <string name="sharemoney_sub">奖金使用</string>
+    <string name="sharemoney_msg_title">奖金说明</string>
+    <string name="sharemoney_msg">"   "您的奖金包括当前的“可用”奖金和“待定”奖金。“待定”奖金在“确认购买”后发放至个人账户，“确认收货”后即成为 “可用”奖金，该奖金可用于再次购买或提现。</string>
+
+    <!-- 播券记录 -->
+    <string name="sharerecord_defule_time">1</string>
+    <string name="sharerecord_tittle">播券记录</string>
+    <string name="sharerecord_times">播券次数</string>
+    <string name="sharerecord_spread_times">有效次数</string>
+    <string name="sharerecord_ticket">金券</string>
+    <string name="sharerecord_operate">操作</string>
+    <string name="sharerecord_operate_info">播金券</string>
+    <string name="share_info">"    "亲，这款源头货好产品我觉得不错，推荐给你</string>
+   	<string name="share_susse">分享成功！</string>
+   	<string name="select_type">请选择播券方式</string>
+   	 <string name="share_info_other">“  ”亲爱的小伙伴，分享给你</string>
+    <!-- 商铺 -->
+    <string name="shop_lookshoptuwen">查看商店图册</string>
+    <string name="shop_title">店铺详情</string>
+    <string name="hop_inshoptime">营业时间:</string>
+
+    <!-- 提交交易 -->
+    <string name="sure_pay">确认付款</string>
+    <string name="trade_number">数量：</string>
+    <string name="trade_expmoney">运费：</string>
+    <string name="trade_allmoney">合计：</string>
+    <string name="trade_usepaymoney">账户支付：</string>
+    <string name="trade_ordernumber">订单号:</string>
+    <string name="trade_ordertimer">订单日期:</string>
+    <string name="trade_about_business">商家信息</string>
+    <string name="trade_orderbusshop">店铺</string>
+
+    <!-- 提交交易结果 -->
+    <string name="traderesutl_tittle_suss">交易成功</string>
+    <string name="traderesutl_tittle_fail">交易失败</string>
+    <string name="traderesutl_suss_info">您已成功支付¥</string>
+    <string name="traderesutl_suss_adress">寄送地址：</string>
+    <string name="traderesutl_suss_name">商品名称：</string>
+    <string name="traderesutl_suss_qmfnumber">订单编号：</string>
+    <string name="traderesutl_fail">支付失败，请到我的订单或我的电子票继续支付</string>
+    <string name="traderesutl_error_adress">收货地址不存在</string>
+    <string name="traderesutl_error_quantity">数量不够</string>
+
+    <!-- 账户中心 -->
+    <string name="user_tittle">我的账户</string>
+    <string name="user_name">用户名：</string>
+    <string name="user_Level">级     别：金娃</string>
+    <string name="user_onlymoney">账户余额：</string>
+    <string name="user_sharegetmoney">奖金明细</string>
+    <string name="user_sharerecord">播券记录</string>
+    <string name="user_myorder">我的订单</string>
+    <string name="user_myticket">我的电子票</string>
+    <string name="user_fav">我的收藏</string>
+    <string name="user_adress">收货地址</string>
+    <string name="user_findservice">帮助中心</string>
+    <string name="user_checkrefre">版本信息</string>
+    <string name="user_aboutjmz">关于我们</string>
+    <string name="user_aboutjmzurl">http://www.jmzjdz.com/plus/list.php?tid=15</string>
+    <string name="user_isnew">该版本已是最新版</string>
+    <string name="user_eixtlogin">"  "确认退出登录？</string>
+    <string name="user_account_prepaid">账户充值</string>
+    <string name="user_bonus_cash">奖金提现</string>
+    <string name="user_loginout">退出登录</string>
+    <string name="user_loginout_suss">退出登录成功</string>
+    
+    <!-- 版本信息-->
+    <string name="app_version_title">版本信息</string>
+    <string name="app_version_msg">当前版本V</string>
+    <string name="app_version_info">Copyright© 金拇指购 2013-2015，All Rights Reserved。桂ICP备14001982号</string>
+    
+      <!-- 内置网页 -->
+    <string name="webview_exist">目标连接不存在</string>
+
+    <!-- 引用上下拉加载 -->
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <string name="refre_last">亲，已加载完了！</string>
+
+    <!-- 订单和电子票状态 -->
+    <string name="waitbuyerpay">等待付款</string>
+    <string name="waitsellersendgoods">等待发货</string>
+    <string name="waitbuyerconfirmgoods">已发货</string>
+    <string name="tradefinished">交易成功</string>
+    <string name="tradeclosed">交易关闭</string>
+    <string name="tradeclosedbysystem">系统关闭</string>
+    <string name="waitselleragree">等待商家同意退款</string>
+    <string name="sellerrefundbuyer">商家拒绝退款</string>
+    <string name="waitsellerconfirmgoods">等待商家确认收货</string>
+    <string name="refundsuccess">退款成功</string>
+    <string name="refundclose">退款关闭</string>
+    <string name="myticket_nouse">未使用</string>
+    <string name="myticket_useed">已使用</string>
+    <string name="myticket_enable">已失效</string>
+    
+    <!-- WXPayEntryActivity -->
+	<string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+	<string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+
+</resources>

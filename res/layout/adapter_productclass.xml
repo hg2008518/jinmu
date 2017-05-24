@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_productadapter"
+    android:orientation="vertical"
+    android:padding="1.6dp" >
+
+   <!--  <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"> -->
+
+        <ImageView
+            android:id="@+id/adapter_productclass_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nullimg" />
+
+        <TextView
+            android:id="@+id/adapter_productclass_tag_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/adapter_productclass_img"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:singleLine="true"
+            android:text="1000元"
+            android:textColor="@color/red"
+            android:textSize="@dimen/ticketadapter_info"
+            android:textStyle="bold"
+            android:visibility="gone" />
+   <!--  </RelativeLayout> -->
+    <!-- 名字 -->
+
+    <TextView
+        android:id="@+id/adapter_productclass_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:singleLine="true"
+        android:text="商品名"
+        android:textSize="12sp" />
+
+    <!-- 原价 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:orientation="horizontal" >
+
+        <!-- 现价 -->
+
+        <TextView
+            android:id="@+id/adapter_productclass_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="000.00元"
+            android:textColor="@color/red"
+            android:textSize="15sp" />
+
+        <!-- 原价 -->
+
+        <TextView
+            android:id="@+id/adapter_productclass_oldprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:text="000.00元"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/ticketadapter_info" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp" >
+
+        <!-- 播金券得奖金 -->
+
+        <TextView
+            android:id="@+id/adapter_productclass_sharegetmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/bg_share"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="@string/order_bottom_initprice"
+            android:textSize="@dimen/ticketadapter_info" />
+
+        <!-- 买金券得奖金 -->
+
+        <TextView
+            android:id="@+id/adapter_productclass_buygetmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="0.5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/bg_gou"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="@string/order_bottom_initprice"
+            android:textSize="@dimen/ticketadapter_info" />
+    </RelativeLayout>
+
+</LinearLayout>

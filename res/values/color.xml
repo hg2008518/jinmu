@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="alphawhite">#bbffffff</color>
+    <color name="alphagray">#bbA9A9A9</color>
+    <color name="black">#000000</color>
+    <color name="oragnered">#FF0099</color>
+    <color name="red">#FF0000</color>
+    <color name="gray">#A9A9A9</color>
+    <color name="yelloegree">#CCFF00</color>
+    <color name="deepgray">#4C4C4C</color>
+    <color name="littlegray">#F5F5F5</color>
+    <color name="alphalittlegray">#cFF5F5F5</color>
+    <color name="smallgray">#dbdbdb</color>
+    <color name="orange">#FF9933</color>
+    <color name="deeporange">#e4700d</color>
+    <color name="violet">#e61c84</color>
+    <color name="deepviolet">#b8407c</color>
+    <color name="pink">#fcf4e8</color>
+    <color name="deeppink">#fcf4e8</color>
+    <color name="pinkred">#ffb77d</color>
+    <color name="basecolor">#f1f1f1</color>
+    <color name="registercolor">#787878</color>
+    <color name="bgColor">#e3e3e3</color>
+    <color name="bgVersioninfo">#fff7f7f7</color>
+    <color name="blue">#0000ff</color>
+    <color name="light_blue">#6593cb</color>
+    <color name="small_blue">#2ba3ff</color>
+    <color name="king">#FFD700</color>
+    <color name="littlegree">#B0C4DE</color>
+    <color name="littleyellow">#FFFFE0</color>
+    <color name="navpage">#FFE1E8EB</color>
+     <color name="gray_line_color">#cccccc</color>
+     <color name="fans_list_title_color">#fdd526</color>
+    <!-- 全民付使用的颜色 -->
+    <color name="umspay_transparent">#00FF00FF</color>
+    <drawable name="umspay_myactivity_dialog">#32000000</drawable>
+ 	<drawable name="umspay_myactivity_dialog2222">#32000000</drawable>
+ 	<color name="umspay_text_color">#6f7e9d</color>
+ 	
+ 	<!-- 扫描二维码 -->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    
+</resources>

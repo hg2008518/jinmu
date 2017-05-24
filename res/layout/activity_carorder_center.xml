@@ -1,0 +1,86 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="@string/user_adress"
+                android:textColor="@color/deeporange"
+                android:textSize="15sp" />
+
+            <View style="@style/lineStyle" />
+
+            <TextView
+                android:id="@+id/carorder_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/arrow_right"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="@string/company" />
+        </LinearLayout>
+		
+        <com.jmz.view.MyListView
+            android:id="@+id/carorder_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:dividerHeight="5dp"
+            android:divider="@color/basecolor"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/carorder_usermoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:text="账户支付  您可用余额50.00元" 
+            android:padding="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/carorder_useusermoney_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/bg_edit_normal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/car_enter_pay_number" />
+
+            <EditText
+                android:id="@+id/carorder_useusermoney_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@drawable/bg_edit_normal"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="numberDecimal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                 />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,118 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/postout_usemoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/postout_unusemoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/postout_msg"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingTop="10dp"
+                android:text="@string/postout_money" />
+
+            <EditText
+                android:id="@+id/postout_moneyedit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edit_normal"
+                android:inputType="numberDecimal"
+                android:padding="10dp"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/postout_msg"
+                android:textColor="@color/oragnered"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/postout_sure"
+                style="@style/ColorButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:text="@string/postout_sure" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/prompt"
+            android:gravity="center_vertical"
+            android:text="@string/postout_msgtitle"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/postout_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/postout_one"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/postout_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/postout_two"
+            android:textSize="12sp" />
+        
+        <TextView
+            android:id="@+id/postout_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/postout_three"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</ScrollView>

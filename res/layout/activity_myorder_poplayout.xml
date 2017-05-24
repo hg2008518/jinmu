@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/littlegray"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/myorder_pop_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="8dp"
+        android:text="@string/myorder_state_allmyorder"
+        android:textColor="@color/black_to_orange" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/smallgray" />
+
+    <TextView
+        android:id="@+id/myorder_pop_waitpay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="8dp"
+        android:text="@string/myorder_state_topay"
+        android:textColor="@color/black_to_orange" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/smallgray" />
+
+    <TextView
+        android:id="@+id/myorder_pop_waitsend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="8dp"
+        android:text="@string/myorder_state_waitsend"
+        android:textColor="@color/black_to_orange" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/smallgray" />
+
+    <TextView
+        android:id="@+id/myorder_pop_waitsure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="8dp"
+        android:text="@string/myorder_state_waitsure"
+        android:textColor="@color/black_to_orange" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/smallgray" />
+
+    <TextView
+        android:id="@+id/myorder_pop_suss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="8dp"
+        android:text="@string/myorder_state_suss"
+        android:textColor="@color/black_to_orange" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/smallgray" />
+
+</LinearLayout>

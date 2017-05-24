@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+        <!-- 圆角 -->
+    <corners 
+        android:radius="25dip"        
+        />
+    
+    
+	<!-- 设置图形资源的宽高-->
+    <size
+        android:width="80dip" 
+        />
+ 	
+    <!-- 图形资源固定的颜色-->
+    <solid android:color="#fc4230" />
+    
+
+</shape>

@@ -1,0 +1,157 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+-optimizationpasses 5                                                           # 指定代码的压缩级别
+-dontusemixedcaseclassnames                                                     # 是否使用大小写混合
+-dontskipnonpubliclibraryclasses                                                # 是否混淆第三方jar
+-dontpreverify                                                                  # 混淆时是否做预校验
+-verbose                                                                        # 混淆时是否记录日志
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*        # 混淆时所采用的算法
+-dontobfuscate
+-dontoptimize
+-keepattributes *Annotation*
+-keepattributes Signature
+-ignorewarnings
+
+-keep public class * extends android.app.Activity                               # 保持哪些类不被混淆
+-keep public class * extends android.app.Application                            # 保持哪些类不被混淆
+-keep public class * extends android.app.Service                                # 保持哪些类不被混淆
+-keep public class * extends android.content.BroadcastReceiver                  # 保持哪些类不被混淆
+-keep public class * extends android.content.ContentProvider                    # 保持哪些类不被混淆
+-keep public class * extends android.app.backup.BackupAgentHelper               # 保持哪些类不被混淆
+-keep public class * extends android.preference.Preference                      # 保持哪些类不被混淆
+-keep public class com.android.vending.licensing.ILicensingService              # 保持哪些类不被混淆
+-keep public class com.jmz.http.ApiResponse                                     # 保持哪些类不被混淆
+
+
+-keep class com.jmz.bean.** {*;}
+-keep class **.R$* {   *;  }
+
+-keepclasseswithmembernames class * {                                           # 保持 native 方法不被混淆
+    native <methods>;
+}
+
+-keepclasseswithmembers class * {                                               # 保持自定义控件类不被混淆
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);     # 保持自定义控件类不被混淆
+}
+
+-keepclassmembers class * extends android.app.Activity {                        # 保持自定义控件类不被混淆
+   public void *(android.view.View);
+}
+
+-keepclassmembers enum * {                                                       # 保持枚举 enum 类不被混淆
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep class * implements android.os.Parcelable {                                # 保持 Parcelable 不被混淆
+  public static final android.os.Parcelable$Creator *;
+}
+
+-libraryjars libs/android-support-v4.jar 
+-dontwarn android.support.v4.** 
+-keep class android.support.v4.** { *; } 
+-keep public class * extends android.support.v4.** 
+
+-libraryjars libs/umspay_android_2.0.1.jar
+-dontwarn com.hxcr.umspay.** 
+-keep class com.hxcr.umspay.** { *; } 
+-keep public class * extends com.hxcr.umspay.** 
+
+-libraryjars libs/alipay.jar
+-dontwarn com.alipay.** 
+-keep class com.alipay.** { *; } 
+-keep public class * extends com.alipay.**
+
+-libraryjars libs/gson-2.1.jar
+-dontwarn com.google.** 
+-keep class com.google.gson** { *; }
+-keep class com.google.gson.stream.* { *; } 
+-keep public class * extends com.google.** 
+-keep class com.google.gson.examples.android.model.* { *; }
+-keep class com.google.gson.* { *;}
+-keep class sun.misc.Unsafe { *; }
+
+-libraryjars libs/nineoldandroids.jar
+-dontwarn com.nineoldandroids.** 
+-keep class com.nineoldandroids.** { *; }
+-keep public class * extends com.nineoldandroids.** 
+-keep class com.nineoldandroids.* { *; }
+
+-libraryjars libs/classes.jar
+-dontwarn pl.droidsonroids.gif.** 
+-keep class pl.droidsonroids.gif.** { *; }
+-keep public class * extends pl.droidsonroids.gif.** 
+-keep class pl.droidsonroids.gif.* { *; }
+
+-libraryjars libs/zxing.jar
+-dontwarn com.zxing.** 
+-keep class com.zxing.** { *; }
+-keep public class * extends com.zxing.** 
+-keep class com.zxing.* { *; }
+
+#---------分享---------
+-dontshrink
+-dontoptimize
+-dontwarn com.google.android.maps.**
+-dontwarn android.webkit.WebView
+-dontwarn com.umeng.**
+-dontwarn com.tencent.weibo.sdk.**
+-dontwarn com.facebook.**
+
+
+-keep enum com.facebook.**
+-keepattributes Exceptions,InnerClasses,Signature
+-keepattributes *Annotation*
+-keepattributes SourceFile,LineNumberTable
+
+-keep public interface com.facebook.**
+-keep public interface com.tencent.**
+-keep public interface com.umeng.socialize.**
+-keep public interface com.umeng.socialize.sensor.**
+-keep public interface com.umeng.scrshot.**
+
+-keep public class com.umeng.socialize.* {*;}
+-keep public class javax.**
+-keep public class android.webkit.**
+
+-keep class com.facebook.**
+-keep class com.umeng.scrshot.**
+-keep public class com.tencent.** {*;}
+-keep class com.umeng.socialize.sensor.**
+
+-keep class com.tencent.mm.sdk.modelmsg.WXMediaMessage {*;}
+
+-keep class com.tencent.mm.sdk.modelmsg.** implements com.tencent.mm.sdk.modelmsg.WXMediaMessage$IMediaObject {*;}
+
+#-----------推送--------
+-dontwarn cn.jpush.**
+-keep class cn.jpush.** { *; }
+
+#-----------云测--------
+-libraryjars /libs/testinagent.jar
+-dontwarn com.testin.agent.**
+-keep class com.testin.agent.** {*;}
+-keepattributes SourceFile, LineNumberTable

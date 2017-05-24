@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/adress_listadapter_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:text="城市" />
+
+    <TextView
+        android:id="@+id/adress_listadapter_street"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adress_listadapter_city"
+        android:padding="2dp"
+        android:text="街道" />
+
+    <TextView
+        android:id="@+id/adress_listadapter_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adress_listadapter_street"
+        android:padding="2dp"
+        android:text="收货人" />
+
+    <TextView
+        android:id="@+id/adress_listadapter_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adress_listadapter_street"
+        android:layout_toRightOf="@+id/adress_listadapter_name"
+        android:padding="2dp"
+        android:text="电话" />
+
+    <TextView
+        android:id="@+id/adress_listadapter_auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/adress_listadapter_street"
+        android:padding="2dp"
+        android:textColor="@color/deeporange" />
+
+    <ImageView
+        android:id="@+id/adress_listadapter_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adress_listadapter_auto"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="2dp"
+        android:src="@drawable/arrow_right" />
+
+</RelativeLayout>

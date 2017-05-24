@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/smallgray"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="还需支付" />
+
+        <TextView
+            android:id="@+id/trade_bottom_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:text="@string/order_bottom_initprice"
+            android:textColor="@color/red" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/trade_bottom_surepay"
+        style="@style/ColorButtonStyle"
+        android:layout_margin="3dp"
+        android:layout_weight="2"
+        android:background="@drawable/bg_nocornerscolorbtn"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/sure_pay" />
+
+</LinearLayout>

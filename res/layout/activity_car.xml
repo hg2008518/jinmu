@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/activity_emptyview" />
+
+    <ListView
+        android:id="@+id/car_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/car_info"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="@color/basecolor"
+        android:dividerHeight="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/car_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <View
+            android:id="@+id/car_line"
+            style="@style/lineStyle"
+            android:layout_marginBottom="5dp" />
+
+        <CheckBox
+            android:id="@+id/car_select_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/car_line"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:checked="false"
+            android:gravity="center"
+            android:padding="5dp"
+            android:paddingLeft="10dp"
+            android:button="@null"
+            android:drawableLeft="@drawable/btn_checkbox"
+            android:text="@string/car_selectall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/car_payallmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/car_line"
+            android:layout_toLeftOf="@+id/car_paybtn"
+            android:text="@string/car_initmoney"
+            android:textColor="@color/deeporange" />
+
+        <TextView
+            android:id="@+id/car_no_expmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/car_payallmoney"
+            android:layout_marginTop="3dp"
+            android:layout_toLeftOf="@+id/car_paybtn"
+            android:text="@string/car_noexpmoney"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/car_paybtn"
+            style="@style/ColorButtonStyle"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_nocornerscolorbtn"
+            android:text="@string/car_pay"
+            android:layout_marginLeft="5dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="@color/littlegray">
+
+    <TextView
+        android:id="@+id/menu_info"
+        style="@style/MenuStyle"
+        android:drawableTop="@drawable/icon_about"
+        android:text="关于我们" />
+
+    <TextView
+        android:id="@+id/menu_refre"
+        style="@style/MenuStyle"
+        android:drawableTop="@drawable/icon_refre"
+        android:text="检查更新" />
+    <TextView
+        android:id="@+id/menu_exit"
+        style="@style/MenuStyle"
+        android:drawableTop="@drawable/menu_exit"
+        android:text="退出应用" />
+
+</LinearLayout>

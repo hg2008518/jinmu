@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <TextView
+        android:id="@+id/adapter_car_order_shop_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="店铺名字" />
+
+    <!-- android:drawableLeft="@drawable/ic_business_detail_shop" -->
+
+    <View
+        style="@style/lineStyle"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+
+    <com.jmz.view.MyListView
+        android:id="@+id/adapter_car_order_shop_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:divider="@color/basecolor"
+        android:dividerHeight="5dp" />
+
+    <View
+        style="@style/lineStyle"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/car_order_money_title" />
+
+        <TextView
+            android:id="@+id/adapter_car_order_shop_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:text="￥0.00"
+            android:textColor="@color/deeporange" />
+    </LinearLayout>
+
+    <View
+        style="@style/lineStyle"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="配送方式" />
+
+        <RadioGroup
+            android:id="@+id/adapter_car_order_radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/adapter_car_order_express_type_button"
+                style="@style/ProductAttrRadioGroupButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:text="@string/order_express" />
+
+            <RadioButton
+                android:id="@+id/adapter_car_order_selfget_type_button"
+                style="@style/ProductAttrRadioGroupButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:text="@string/order_selfget" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        style="@style/lineStyle"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/car_order_fare_title" />
+
+        <TextView
+            android:id="@+id/adapter_car_order_shop_fare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:text="￥0.00"
+            android:textColor="@color/deeporange" />
+    </LinearLayout>
+
+    <View
+        style="@style/lineStyle"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:id="@+id/adapter_car_order_shop_postscript"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_edit_normal"
+        android:hint="给卖家留言"
+        android:inputType="textMultiLine"
+        android:minLines="2"
+        android:padding="5dp"
+        android:textSize="12sp" />
+
+</LinearLayout>

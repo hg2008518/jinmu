@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selectattr"
+        android:orientation="vertical" >
+
+        <com.jmz.view.ClearEditTextView
+            android:id="@+id/uselogin_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableLeft="@drawable/icon_user"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:hint="@string/login_entername"
+            android:inputType="phone"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textSize="13sp" />
+
+        <View style="@style/lineStyle" />
+
+        <com.jmz.view.ClearEditTextView
+            android:id="@+id/uselogin_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableLeft="@drawable/icon_password"
+            android:drawablePadding="10dp"
+            android:hint="@string/login_password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/uselogin_loginbtn"
+        style="@style/ColorButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:text="@string/login_tittle" />
+
+    <TextView
+        android:id="@+id/uselogin_registerbtn"
+        style="@style/ColorButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/login_register"
+        android:textColor="@color/white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" >
+
+        <CheckBox
+            android:id="@+id/uselogin_save"
+            style="@style/LoginCheckBoxStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:checked="true"
+            android:padding="5dp"
+            android:paddingLeft="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/uselogin_save"
+            android:text="@string/login_checkboxtext"
+            android:textColor="@color/deepgray"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/uselogin_forgetbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:text="@string/login_forgetpassword"
+            android:textColor="@color/orange_to_black"
+            android:textSize="13sp" />
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/use_otheraccount_login"/>
+        <Button 
+            android:id="@+id/qq_longinbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/icon_qq_login"/>
+        <Button 
+            android:id="@+id/weixin_longinbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_weixin_login"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/uselogin_companyinfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/company"
+        android:textColor="@color/deepgray"
+        android:textStyle="bold" />
+
+</LinearLayout>

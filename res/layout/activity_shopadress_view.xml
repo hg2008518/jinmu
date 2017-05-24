@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_shopaddress"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp" 
+    android:visibility="invisible" >
+    <CheckBox 
+		android:id="@+id/check_box"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:onClick="onClick"
+		/>
+	<TextView 
+	    android:id="@+id/shop_address"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		/>
+</LinearLayout>

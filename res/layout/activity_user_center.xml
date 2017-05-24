@@ -1,0 +1,122 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/user_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/icon" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/user_img"
+                android:layout_toRightOf="@+id/user_img"
+                android:text="18878792560"
+                android:textColor="@color/deeporange" />
+
+            <TextView
+                android:id="@+id/user_levle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_name"
+                android:layout_toRightOf="@+id/user_img"
+                android:text="@string/user_Level"
+                android:textColor="@color/deeporange" />
+
+            <TextView
+                android:id="@+id/user_onlymoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_levle"
+                android:layout_toRightOf="@+id/user_img"
+                android:text="@string/order_bottom_initprice" />
+
+            <LinearLayout
+                android:id="@+id/user_aboutmoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_img"
+                android:layout_marginTop="10dp"
+                android:background="@color/smallgray"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/user_canusemoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="0.3dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:text="可提现      ￥0.00" />
+
+                <TextView
+                    android:id="@+id/user_nocanusemoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0.3dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="right"
+                    android:padding="10dp"
+                    android:text="不可用       ￥0.00" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_aboutmoney"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/user_charge"
+                    style="@style/ColorButtonStyle"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_white_gray_btn"
+                    android:text="@string/user_account_prepaid"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/user_postout"
+                    style="@style/ColorButtonStyle"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_white_gray_btn"
+                    android:text="@string/user_bonus_cash"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.jmz.view.MyGridView
+            android:id="@+id/user_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/user_login_out"
+            style="@style/ColorButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:text="@string/user_loginout" />
+    </LinearLayout>
+
+</ScrollView>

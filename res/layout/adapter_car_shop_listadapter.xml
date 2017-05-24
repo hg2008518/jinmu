@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_selectattr"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0.5dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/adapter_car_shop_checkbox"
+            style="@style/LoginCheckBoxStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:checked="false"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/adapter_car_shop_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/adapter_car_shop_checkbox"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical|left"
+            android:text="店铺名字" />
+        <!-- android:drawableLeft="@drawable/ic_business_detail_shop" -->
+    </RelativeLayout>
+
+    <View style="@style/lineStyle" />
+
+    <com.jmz.view.MyListView
+        android:id="@+id/adapter_car_shop_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:divider="@null"/>
+
+</LinearLayout>

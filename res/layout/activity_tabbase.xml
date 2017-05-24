@@ -1,0 +1,60 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tabbase_tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tabbase_radiogroup" />
+
+        <RadioGroup
+            android:id="@+id/tabbase_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/basecolor"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/tabbase_home"
+                style="@style/TabRadioGroupButtonStyle"
+                android:checked="true"
+                android:drawableTop="@drawable/tab_home" />
+
+            <RadioButton
+                android:id="@+id/tabbase_qiandian"
+                style="@style/TabRadioGroupButtonStyle"
+                android:drawableTop="@drawable/tab_qiandian" />
+
+            <RadioButton
+                android:id="@+id/tabbase_ping"
+                style="@style/TabRadioGroupButtonStyle"
+                android:drawableTop="@drawable/tab_ping" />
+
+            <RadioButton
+                android:id="@+id/tabbase_car"
+                style="@style/TabRadioGroupButtonStyle"
+                android:drawableTop="@drawable/tab_car" />
+
+            <RadioButton
+                android:id="@+id/tabbase_user"
+                style="@style/TabRadioGroupButtonStyle"
+                android:drawableTop="@drawable/tab_user" />
+        </RadioGroup>
+    </RelativeLayout>
+
+</TabHost>

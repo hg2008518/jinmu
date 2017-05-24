@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/myticket_center_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgColor"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/myticket_center_all"
+            style="@style/ProductClassRadioGroupButtonStyle"
+            android:checked="true"
+            android:text="@string/myorder_state_allmyorder" />
+
+        <RadioButton
+            android:id="@+id/myticket_center_nouse"
+            style="@style/ProductClassRadioGroupButtonStyle"
+            android:checked="true"
+            android:text="@string/myticket_nouse" />
+
+        <RadioButton
+            android:id="@+id/myticket_center_useed"
+            style="@style/ProductClassRadioGroupButtonStyle"
+            android:text="@string/myticket_useed" />
+
+        <RadioButton
+            android:id="@+id/myticket_center_unenable"
+            style="@style/ProductClassRadioGroupButtonStyle"
+            android:text="@string/myticket_enable" />
+    </RadioGroup>
+
+    <include layout="@layout/activity_emptyview" />
+
+    <com.jmz.view.PullToRefreshLayout
+        android:id="@+id/myticket_center_refrelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/refresh_head" />
+
+        <com.jmz.view.PullableListView
+            android:id="@+id/myticket_listview"
+            style="@style/ListviewStyle" />
+
+        <include layout="@layout/load_more" />
+    </com.jmz.view.PullToRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/shop_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:padding="5dp"
+        android:src="@drawable/nullimg" />
+
+    <!-- 选择按钮 -->
+
+    <RadioGroup
+        android:id="@+id/shop_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgColor"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/shop_nomalview"
+            style="@style/ProductClassRadioGroupButtonStyle"
+            android:checked="true"
+            android:text="@string/home_type_int" />
+
+        <RadioButton
+            android:id="@+id/shop_hotview"
+            style="@style/ProductClassRadioGroupButtonStyle"
+            android:text="@string/home_type_hot" />
+
+        <RadioButton
+            android:id="@+id/shop_hitview"
+            style="@style/ProductClassRadioGroupButtonStyle"
+            android:text="@string/home_type_hit" />
+
+        <RadioButton
+            android:id="@+id/shop_newview"
+            style="@style/ProductClassRadioGroupButtonStyle"
+            android:text="@string/home_type_new" />
+    </RadioGroup>
+
+    <!-- 下拉列表 -->
+
+    <include layout="@layout/activity_emptyview" />
+
+    <com.jmz.view.PullToRefreshLayout
+        android:id="@+id/shop_refrelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/refresh_head" />
+
+        <com.jmz.view.PullableGridView
+            android:id="@+id/shop_listview"
+            style="@style/GridViewStyle" />
+
+        <include layout="@layout/load_more" />
+    </com.jmz.view.PullToRefreshLayout>
+
+</LinearLayout>

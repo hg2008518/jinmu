@@ -1,0 +1,19 @@
+package com.jmz.bean;
+
+public class Register extends ParentBean{
+	private String PasswordString;
+
+	public String getPasswordString() {
+		return PasswordString;
+	}
+
+	public void setPasswordString(String passwordString) {
+		PasswordString = passwordString;
+	}
+
+	@Override
+	public String toString() {
+		return "Register [PasswordString=" + PasswordString + "]";
+	}
+	
+}

@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="@drawable/bg_white_gray">
+
+    <ImageView
+        android:id="@+id/adapter_myorderinfo_product_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:src="@drawable/nullimg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_margin="5dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/adapter_myorderinfo_product_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="标题" />
+        <TextView
+            android:id="@+id/adapter_myorderinfo_product_attr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="属性"
+            android:layout_below="@+id/adapter_myorderinfo_product_title"
+            android:textColor="@color/deepgray" />
+
+        <TextView
+            android:id="@+id/adapter_myorderinfo_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adapter_myorderinfo_product_attr"
+            android:text="价格" 
+            android:textColor="@color/deeporange"/>
+
+        <TextView
+            android:id="@+id/adapter_myorderinfo_product_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adapter_myorderinfo_product_attr"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/adapter_myorderinfo_product_price"
+            android:text="数量" 
+            android:textColor="@color/deeporange"/>
+
+        <TextView
+            android:id="@+id/adapter_myorderinfo_product_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="小计：0.00" 
+            android:gravity="right"
+            android:textColor="@color/oragnered"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</LinearLayout>

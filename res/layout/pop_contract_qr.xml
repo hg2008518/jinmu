@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:orientation="vertical" >
+    <ImageView 
+        android:id="@+id/contract_qr_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/nullimg"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="有效期至"
+        android:textSize="18sp"/>
+    <TextView 
+        android:id="@+id/contract_vaild_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/orange"
+        android:text="2015-01-12 17:50"/>
+
+</LinearLayout>

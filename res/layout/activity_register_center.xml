@@ -1,0 +1,159 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_selectattr"
+            android:orientation="vertical" >
+
+            <com.jmz.view.ClearEditTextView
+                android:id="@+id/register_phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableLeft="@drawable/icon_user"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:hint="@string/register_phone"
+                android:inputType="phone"
+                android:padding="15dp"
+                android:textSize="13sp"
+                android:singleLine="true"
+                android:textColorHint="@color/smallgray" />
+
+            <View style="@style/lineStyle" />
+
+            <com.jmz.view.ClearEditTextView
+                android:id="@+id/register_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableLeft="@drawable/icon_password"
+                android:drawablePadding="10dp"
+                android:hint="@string/login_password"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:singleLine="true" 
+                android:textSize="13sp"
+                android:textColorHint="@color/smallgray"/>
+
+            <View style="@style/lineStyle" />
+
+            <com.jmz.view.ClearEditTextView
+                android:id="@+id/register_passwordagain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableLeft="@drawable/icon_password"
+                android:drawablePadding="10dp"
+                android:hint="@string/register_passwordagain"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:textSize="13sp"
+                android:textColorHint="@color/smallgray" />
+
+            <View style="@style/lineStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <com.jmz.view.ClearEditTextView
+                    android:id="@+id/register_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/icon_code"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/register_entercode"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textSize="13sp" 
+                    android:textColorHint="@color/smallgray"/>
+
+                <TextView
+                    android:id="@+id/register_sendsms"
+                    style="@style/ColorButtonStyle"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_pinkcolorbtn"
+                    android:padding="13dp"
+                    android:singleLine="true"
+                    android:text="@string/findpassword_sendcode"
+                    android:textColor="@color/deeporange"
+                    android:textSize="@dimen/ticketadapter_info" />
+            </LinearLayout>
+            
+            <View style="@style/lineStyle" />
+
+            <com.jmz.view.ClearEditTextView
+                android:id="@+id/register_referrername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableLeft="@drawable/icon_user"
+                android:drawablePadding="10dp"
+                android:hint="@string/register_hint_referrername"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:textSize="13sp"
+                android:textColorHint="@color/smallgray" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/register_sure"
+            style="@style/ColorButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/sure_btn_title" />
+
+        <LinearLayout
+            android:id="@+id/register_layout_rule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="20dp" >
+
+            <CheckBox
+                android:id="@+id/register_agree"
+                style="@style/LoginCheckBoxStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:padding="5dp"
+                android:paddingLeft="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_rule" />
+
+            <TextView
+                android:id="@+id/register_rule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:text="@string/rule"
+                android:textColor="@color/deeporange"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
